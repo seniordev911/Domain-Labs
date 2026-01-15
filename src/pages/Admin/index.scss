@@ -1,0 +1,23 @@
+.canvasjs-chart-credit {
+    display: none !important;
+}
+
+.canvasjs-chart-toolbar {
+    display: none;
+}
+
+.statistics-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .period-wrapper {
+        display: flex;
+        gap: 50px;
+        
+        p {
+            cursor: pointer;
+            z-index: 1;
+        }
+    }
+}

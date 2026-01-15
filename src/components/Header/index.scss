@@ -1,0 +1,121 @@
+@media (min-width: 600px) {
+	.css-1t29gy6-MuiToolbar-root {
+		min-height: 110px;
+	}
+}
+
+header {
+	height: 100px;
+	justify-content: center;
+
+	.toolbar-container {
+		@media (min-width: 484px) {
+			padding: 0 !important;
+		}
+	}
+}
+
+.MuiPaper-root.MuiDrawer-paper {
+	background: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(25px);
+
+	@media (min-width: 500px) {
+		width: calc(100vw - 100px);
+	}
+
+	@media (max-width: 500px) {
+		width: 400px;
+	}
+
+	@media (max-width: 400px) {
+		width: 350px;
+	}
+}
+
+.toggle-wrapper {
+	.react-toggle-track {
+		background-color: #D9D9D9;
+	}
+
+	.react-toggle-thumb {
+		background: linear-gradient(36.67deg, #4BD8D8 -6%, #146EB4 110.33%);
+		border: none;
+	}
+}
+
+.advanced-search-field {
+	#name {
+		color: white;
+	}
+
+	label {
+		color: rgb(81, 62, 255);
+	}
+}
+
+.connect-button-wrapper>div {
+	button {
+		background: linear-gradient(75.27deg, #4BD8D8 -17.82%, #146EB4 136.02%) !important;
+	}
+
+	button:last-child>div:last-child {
+		background: linear-gradient(75.27deg, #4BD8D8 -17.82%, #146EB4 136.02%) !important;
+		border: none;
+	}
+}
+
+.connect-button-wrapper-mobile {
+	&>div {
+		display: flex;
+		justify-content: center;
+
+		&>button {
+			background: linear-gradient(75.27deg, #4BD8D8 -17.82%, #146EB4 136.02%);
+			border-radius: 15.4839px;
+			width: 270px;
+			height: 50px;
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 600;
+			font-size: 23.2258px;
+			line-height: 28px;
+			letter-spacing: -0.01em;
+			border: none;
+			color: white;
+			margin: 20px;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+
+			&:nth-child(2) {
+				&>div:first-child {
+					display: none;
+				}
+
+				&>div:nth-child(2)>div {
+					display: flex !important;
+					flex-direction: row;
+					gap: 10px;
+
+					&>div:last-child {
+						display: flex;
+						gap: 10px;
+						align-items: center;
+
+						@media (max-width: 570px) {
+							display: none;
+						}
+					}
+
+
+				}
+			}
+
+			@media (max-width: 650px) {
+				font-size: 15px;
+			}
+		}
+	}
+}

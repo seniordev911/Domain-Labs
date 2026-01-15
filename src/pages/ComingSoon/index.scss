@@ -1,0 +1,104 @@
+.coming-soon-component {
+  
+  .animation {
+    z-index: 1;
+    .animation1 {
+      position: absolute;
+      transform: rotate(11.94deg);
+      bottom: -500px;
+      filter: blur(50px);
+      left: -200px;
+      animation-name: Animation1;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    .animation2 {
+      filter: blur(30px);
+      position: absolute;
+      left: calc(50% - 560px);
+      width: 523px;
+      animation-name: Animation2;
+      top: -30px;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    .animation3 {
+      position: absolute;
+      right: -240px;
+      transform: rotate(11.53deg);
+      filter: blur(50px);
+      top: -200px;
+      animation-name: Animation3;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    .animation4 {
+      position: absolute;
+      left: calc(50% - 266px);
+      filter: blur(50px);
+      transform: rotate(32.53deg);
+      bottom: -400px;
+      animation-name: Animation4;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+  }
+  .socials-coming-soon {
+    img {
+      @media (max-width: "700px") {
+        width: 70px;
+        height: 70x;
+      }
+    }
+  }
+}
+
+@keyframes Animation1 {
+  0% {
+    transform: rotate(11.94deg) translateX(0px) translateY(0px);
+  }
+  50% {
+    transform: rotate(11.94deg) translateX(160px) translateY(-300px);
+  }
+  100% {
+    transform: rotate(11.94deg) translateX(0px) translateY(0px);
+  }
+}
+@keyframes Animation2 {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(300px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes Animation3 {
+  0% {
+    transform: rotate(11.53deg) translateX(0px) translateY(0px);
+  }
+  50% {
+    transform: rotate(11.53deg) translateX(-200px) translateY(200px);
+  }
+  100% {
+    transform: rotate(11.53deg) translateX(0px) translateY(0px);
+  }
+}
+@keyframes Animation4 {
+  0% {
+    transform: rotate(32.53deg) translateY(0px);
+  }
+  50% {
+    transform: rotate(32.53deg) translateY(-200px);
+  }
+  100% {
+    transform: rotate(32.53deg) translateY(0px);
+  }
+}
